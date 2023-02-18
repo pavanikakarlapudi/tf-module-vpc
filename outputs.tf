@@ -1,4 +1,7 @@
-//output "subnet_ids" {
-//  value = aws_subnet.main.*.id
-//}
-//
+output "vpc_id" {
+  value = aws_vpc.main.id
+}
+
+output "vpc_peering_connection_id" {
+  value = aws_vpc_peering_connection.peer.id
+}
